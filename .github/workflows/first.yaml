@@ -3,13 +3,17 @@ name: Task 1 YML File
 on: 
   push:
     branches: ["main"]
+
   pull_request:
     branches: ["main"]
+
   workflow_dispatch:
 
 jobs:
     build:
+
         runs-on: ubuntu-latest
+        
         steps: 
         - name: Print greeting
           run: echo Hola DevOps 🚀
@@ -51,7 +55,7 @@ jobs:
         - name: Download artifact
           uses: actions/download-artifact@v4
           with:
-            name: test-file
+            name: test-file-step2
 
         - name: Show content
           run: cat test.txt
