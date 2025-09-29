@@ -20,7 +20,9 @@ jobs:
               run: echo Hola DevOps 🚀
             
             - name: show branch name
-              run: echo github.ref
+              run: |
+                echo Github Ref: ${{github.ref}}
             
             - name: show username
-              run: echo github.actor
+              run: |
+                echo Github Ref: ${{github.actor}}
