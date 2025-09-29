@@ -9,12 +9,12 @@ on:
     
     workflow_dispatch:
 
-    jobs:
-        build:
-            runs-on: ubuntu-latest
+jobs:
+    build:
+        runs-on: ubuntu-latest
             
-            steps: 
-                - uses: actions/checkout@v4
+        steps: 
+            - uses: actions/checkout@v4
 
-                - name: Print greeting
-                  run: echo Hola DevOps 🚀
+            - name: Print greeting
+              run: echo Hola DevOps 🚀
