@@ -20,7 +20,7 @@ jobs:
       - name: Upload file as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: test-file
+          name: test-file-step1
           path: test.txt
 
   job:
@@ -41,7 +41,7 @@ jobs:
       - name: Upload updated file
         uses: actions/upload-artifact@v4
         with:
-          name: test-file
+          name: test-file-step2
           path: test.txt
 
   show-file:
