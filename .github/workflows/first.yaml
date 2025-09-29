@@ -31,3 +31,23 @@ jobs:
               run: |
                 echo Preparing new build
                 echo Build completed
+            
+            - name: create new file
+              run: touch test.txt
+    
+    job:
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+            - name: show files
+              run: echo ls -la
+            
+            - name: edit file test.txt
+              run: echo testing new file > test.txt
+    
+    show-file:
+        runs-on: ubuntu-latest
+        needs: job
+        steps:
+            - name: show content
+              run: cat test.text
