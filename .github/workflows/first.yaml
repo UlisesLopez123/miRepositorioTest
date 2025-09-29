@@ -26,3 +26,8 @@ jobs:
             - name: show username
               run: |
                 echo Github Ref: ${{github.actor}}
+            
+            - name: Multiple lines
+              run: |
+                echo Preparing new build
+                echo Build completed
