@@ -1,0 +1,12 @@
+name: Test Self-Hosted Runner
+on:
+    workflow_dispatch
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print working dir
+        run: pwd
+      - name: List files
+        run: ls -la

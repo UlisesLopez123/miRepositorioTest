@@ -1,11 +1,11 @@
 name: Task 1 YML File
 
 on: 
-  push:
-    branches: ["main"]
+  # push:
+  #   branches: ["main"]
 
-  pull_request:
-    branches: ["main"]
+  # pull_request:
+  #   branches: ["main"]
 
   workflow_dispatch:
 
